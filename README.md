@@ -39,26 +39,22 @@ Derived Genetic Risk Score (GRS)
 
 The repository follows a modular, layered structure consistent with production data platform design.
 
+```
 clinical-genomic-analytics/
-│
 ├── src/
-│   ├── ingestion.py
-│   ├── preprocessing.py
-│   ├── ehr_integration.py
-│   ├── feature_engineering.py
-│   ├── genotype_generation.py
-│   ├── statistical_modeling.py
-│   └── visualization.py
-│
+│ ├── ingestion.py
+│ ├── preprocessing.py
+│ ├── ehr_integration.py
+│ ├── feature_engineering.py
+│ ├── genotype_generation.py
+│ ├── statistical_modeling.py
+│ └── visualization.py
 ├── notebooks/
-│   └── pipeline_demo.ipynb
-│
+│ └── pipeline_demo.ipynb
 ├── data/
-│   └── raw/
-│
+│ └── raw/
 └── README.md
-
-
+```
 ## Design principle:
 Business logic lives in modular Python files.
 The notebook orchestrates execution and presents analysis results.
@@ -181,5 +177,6 @@ Clear separation of event-level and patient-level data
 Reproducible, auditable pipelines
 
 Engineering discipline in healthcare data contexts
+
 
 This project demonstrates those competencies in a clinically relevant domain.
